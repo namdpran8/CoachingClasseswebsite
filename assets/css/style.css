@@ -1578,3 +1578,14 @@ button:hover{
   border-bottom:2px solid #bebed2
 
 }
+
+
+#txt {
+  font-size: 200%;
+  font-family: "Kalnia Glaze", serif;
+  font-optical-sizing: 1rem;
+  font-weight: 600;
+  font-style: bold;
+  font-variation-settings:
+    "wdth" 100;
+}

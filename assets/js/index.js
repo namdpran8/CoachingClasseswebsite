@@ -1,13 +1,3 @@
-/*-----------------------------------------------------------
-* Template Name    :  Nill | Bootstrap 5 personal, portfolio, CV and resume template
-* Author           : Retrinagroup
-* Version          : 2.0.0
-* Created          : January 2020
-* Last Update      : July 2022
-* File Description : Main js file of the template
-*------------------------------------------------------------
-*/
-
 // repeated variables
 var $window = $(window);
 var $root = $('html, body');
@@ -21,10 +11,7 @@ $(document).ready(function () {
     sliderOwlCarousel();
     swiperSlider();
     typedJS();
-    portfolioPopup();
     mapInit();
-    validateEmail();
-    sendEmail();
     $('.owl-item.active .hero-slide').addClass('zoom');
 
 
@@ -37,13 +24,6 @@ $window.on("load", (function() {
     portfolioIsotop();
 }));
 
-/*-----------------------------------------------------------------------------
-                                   FUNCTIONS
------------------------------------------------------------------------------*/
-
-/*-------------------------
-       Page Pilling
--------------------------*/
 function pagePilling(){
 
     "use strict";
@@ -77,10 +57,10 @@ function pagePilling(){
         keyboardScrolling: true,
         sectionSelector: '.section',
         animateAnchor: true,
-        //events
+     
         onLeave: function(index, nextIndex, direction){},
 		afterLoad: function(anchorLink, index){
-            // Count Up in ABOUT ME  section //
+        
             if(anchorLink == 'about'){
                 $('.timer').countTo();
                 $('.count-number').removeClass('timer');
@@ -98,11 +78,6 @@ function pagePilling(){
 		afterRender: function(){},
     });
 }
-
-
-/*-------------------------
-        Color Scheme
--------------------------*/
 function colorScheme(){
 
     "use strict";
@@ -114,9 +89,7 @@ function colorScheme(){
     });
 }
 
-/*-------------------------
-    MENU TOGGLER
--------------------------*/
+
 function menuToggler() {
 
     "use strict";
@@ -126,23 +99,16 @@ function menuToggler() {
     });
 }
 
-/*--------------------------
-    HERO BACKGROUND IMAGE
----------------------------*/
 var hero01 = $('.hero-01');
 var backgrounImage = hero01.data("background-image");
 hero01.css('background', 'url(' + backgrounImage + ') no-repeat');
 
-/*---------------------------
-    FOOTER BACKGROUND IMAGE
----------------------------*/
+
 var footer = $('.footer');
 var backgrounImage = footer.data("background-image");
 footer.css('background', 'url(' + backgrounImage + ') no-repeat');
 
-/*-----------------------------
-      SLIDER OWL CAROUSEL
-------------------------------*/
+
 function sliderOwlCarousel(){
     "use strict";
 
@@ -167,9 +133,6 @@ function sliderOwlCarousel(){
     });
 }
 
-/*-----------------------------
-     HERO SWIPER SLIDER
-------------------------------*/
 function swiperSlider(){
 
     "use strict";
